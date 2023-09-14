@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container mt-3 mb-3">
+    <div class="d-flex justify-content-center">
+
+      <form method="POST" class="body-form w-50 border border-secondary-subtle border-1 rounded shadow">
+        <div class="header text-center mb-2">
+          <p class="form-title fs-2 text-muted">Modificar</p>          
+        </div>
+        <div>
+          <input type="hidden" class="form-control" name="id" value="<?php echo $dato['id'];?>" required="">
+        </div>
+
+        <div class="ps-5 pe-5">
+          <div class="d-flex justify-content-around mb-3">
+            <div class="">
+              <label for="fecha" class="col-form-label text-muted">Fecha Remito:</label>
+              <input type="date" class="form-control form-control-sm " id="fecha_remito" name="fecha_remito"
+                value="<?php echo $dato['fecha_remito'];?>" required="">
+            </div>
+            <div class="ms-5">
+              <label for="fechaD" class="col-form-label text-muted">Fecha Descarga:</label>
+              <input type="date" class="form-control form-control-sm" id="fecha_descarga" name="fecha_descarga"
+                value="<?php echo $dato['fecha_descarga'];?>" required="">
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="proveedor" class="form-label text-muted">Proveedor:</label>
+            <input type="text" class="form-control form-control-sm" id="proveedor" name="proveedor"
+              value="<?php echo $dato['proveedor'];?>" placeholder="Proveedor" required>
+          </div>
+          <div class="mb-2">
+            <label for="yacimiento" class="form-label text-muted">Yacimiento:</label>
+            <input type="text" class="form-control form-control-sm" id="yacimiento" name="yacimiento"
+              value="<?php echo $dato['yacimiento'];?>" placeholder="Yacimiento" required="">
+          </div>
+          <div class="row mb-2">
+            <div class="col-6">
+              <label for="numero" class="col-form-label text-muted">Remito:</label>
+              <input type="text" class="form-control form-control-sm" id="numero" name="numero"
+                value="<?php echo $dato['numero'];?>" placeholder="Remito" required="">
+            </div>
+            <div class="col-6">
+              <label for="producto" class="col-form-label text-muted">Producto:</label>
+              <input type="text" class="form-control form-control-sm" id="producto" name="producto"
+                value="<?php echo $dato['producto'];?>" placeholder="Producto" required="">
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-6">
+              <label for="nominal" class="col-form-label text-muted">Nominal:</label>
+              <input type="text" class="form-control form-control-sm" id="nominal" name="nominal"
+                value="<?php echo $dato['nominal'];?>" placeholder="Nominal" required="">
+            </div>
+            <div class="col-6">
+              <label for="descargado" class="col-form-label text-muted">Descargado:</label>
+              <input type="text" class="form-control form-control-sm" id="descargado" name="descargado"
+                value="<?php echo $dato['descargado'];?>" placeholder="Descargado" required="">
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="emp_flete" class="col-form-label text-muted">Emp.Flete:</label>
+            <input type="text" class="form-control form-control-sm" id="emp_flete" name="emp_flete"
+              value="<?php echo $dato['emp_flete'];?>" placeholder="Emp. Flete" required="">
+          </div>
+          <div class="mb-3">
+            <label for="chofer" class="col-form-label text-muted">Chofer:</label>
+            <input type="text" class="form-control form-control-sm" id="chofer" name="chofer"
+              value="<?php echo $dato['chofer'];?>" placeholder="Chofer" required="">
+          </div>
+          <div class="row mb-2">
+            <div class="col-6">
+              <label for="pat_camion" class="col-form-label text-muted">Pat.Camion:</label>
+              <input type="text" class="form-control form-control-sm" id="pat_camion" name="pat_camion"
+                value="<?php echo $dato['pat_camion'];?>" placeholder="Pat. Camion" required="">
+            </div>
+            <div class="col-6">
+              <label for="pat_acoplado" class="col-form-label text-muted">Pat.Acoplado:</label>
+              <input type="text" class="form-control form-control-sm" id="pat_acoplado" name="pat_acoplado"
+                value="<?php echo $dato['pat_acoplado'];?>" placeholder="Pat. Acoplado" required="">
+            </div>
+          </div>
+          <br>
+          <div class="mb-1 d-flex justify-content-end gap-4 mb-4">
+            <button type="submit" class="btn btn-outline-primary" name="modificarT" value="modificarT">Modificar</button>
+            <button type="button" class="btn btn-outline-primary" onclick="location.href='listado-admin.php'">Volver</button>
+          </div>
+        </div>
+
+
+
+      </form>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

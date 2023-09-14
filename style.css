@@ -1,0 +1,13 @@
+.body-form{
+    background-color: hsla(220,10%,98%,1);
+}
+
+.header{
+    background-image: url("/encabezado.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 172px;        
+}
+.form-title{
+    padding-top: 90px;
+}
